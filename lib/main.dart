@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:point_of_sale/helpers/sql_helper.dart';
 import 'package:point_of_sale/home.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  var db=SqlHelper();
   runApp(const MyApp());
 }
 
